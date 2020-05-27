@@ -1,0 +1,24 @@
+{
+    "manifest_version":2,
+    "name": "Donnie Pump",
+    "version": "0.1",
+    "content_scripts":[
+        {
+            "matches":[
+                "<all_urls>"
+            ],
+            "js":["donnie.js"]
+        }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "{f4adadc0-759c-4a40-ba4b-7ecab814c3b8}",
+          "strict_min_version": "48.0"
+        },
+        "edge":{
+            "browser_action_next_to_addressbar": true
+        }
+    }
+    
+      
+}
